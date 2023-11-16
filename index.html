@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+        <title> Weather App </title>
+        <style>
+            h1{
+                margin-left: 35%;  
+                font-family: Anton;
+                margin-top: 17%;
+                font-size: 100px;
+            }
+            h2{
+                margin-top: -3%;;
+                margin-left: 32%;
+                font-size: 30px;
+
+            }
+
+            input{
+                margin-left: 40%;
+                height: 35px;
+                width: 200px;
+                font-size: x-large;
+            }
+
+            button{
+                font-family: Anton;
+                background-color: black;
+                color: white;
+                width: 120px;
+                height: 35px;
+                font-size: large;
+            }
+
+            body{
+                background-color: brown;
+            }
+            .result{
+                margin-left: 40%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <head class="heading">
+        <h1>Weather App</h1>
+        <h2>The website changes color with the temperature!!</h2>
+        </head> 
+
+        <div id="app">
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button id="fetchWeather" onclick="ChangeBGColor()">Get Weather</button>
+        <div class="result" id="weatherResult">
+        
+            <!--Weather data will be displayed here-->
+        </div>
+        </div>
+
+        <script src= "script.js">
+        </script>
+    </body>
+</html> 
